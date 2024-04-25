@@ -53,7 +53,7 @@ export const createJobSchema = z
     description: z.string().max(5000).optional(),
     salary: numericRequiredString.max(
       9,
-      "Number can't be longer than 9 digits",
+      "Number can't be longer than 9 digits.",
     ),
   })
   .and(applicationSchema)
