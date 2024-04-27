@@ -1,3 +1,40 @@
+# EkoJobs
+
+A full stack Job Posting website. Built to practice and learn new things using Next.js TypeScript, Prisma, TailwindCss, Postgresql..   
+Some packages used in project: Zod, shadcn, Clerk, react-hook-form..  
+Website uses the server actions, server components and many other Next features.  
+
+Demo: https://eko-jobs.vercel.app/
+
+***
+ ## Screenshots
+
+ ### Main Screen
+![Screenshot_7](https://github.com/ekin-kar/ekoJobs/assets/166856972/029911b5-6e08-4a8d-b33f-668f830a4983)
+
+### Job Details
+
+![Screenshot_8](https://github.com/ekin-kar/ekoJobs/assets/166856972/9eeadf43-0e7b-4cf3-8902-3766db3d7e6b)
+
+### Create New Job Advertisement
+
+![Screenshot_2](https://github.com/ekin-kar/ekoJobs/assets/166856972/ca268f15-6761-4dc2-8f9e-92133ea2597a)
+
+### Admin Panel Login 
+
+![Screenshot_1](https://github.com/ekin-kar/ekoJobs/assets/166856972/9ac123c4-c099-4a2f-967c-7b65eef59342)
+
+### Admin Panel
+
+Job postings needs to be approved by admins.
+
+![Screenshot_4](https://github.com/ekin-kar/ekoJobs/assets/166856972/40ac415e-c17d-4ac5-b3d8-1c7e578f65fb)
+
+### Filtering using searchparams
+
+![Screenshot_6](https://github.com/ekin-kar/ekoJobs/assets/166856972/36aa1cdb-72a4-430b-bafb-617c321ed462)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
