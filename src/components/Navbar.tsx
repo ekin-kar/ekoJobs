@@ -14,7 +14,6 @@ export default function Navbar() {
         </Link>
         <Button asChild>
           <Link href="/jobs/new">Post a Job</Link>
-          <div>test</div>
         </Button>
       </nav>
     </header>
