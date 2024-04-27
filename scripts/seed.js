@@ -3,6 +3,7 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 async function main() {
+  await prisma.job.deleteMany();
   await Promise.all(
     placeholderJobs.map(async (job) => {
       await prisma.job.upsert({
