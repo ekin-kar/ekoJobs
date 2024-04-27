@@ -3,6 +3,7 @@ import JoblistItem from "./JoblistItem";
 import prisma from "@/lib/prisma";
 import { JobFilterValues } from "@/lib/validation";
 import { Prisma } from "@prisma/client";
+import Link from "next/link";
 
 interface JobResultsProps {
   filterValues: JobFilterValues;
@@ -37,14 +38,18 @@ export default async function JobResults({
       { approved: true },
     ],
   };
+
   const jobs = await prisma.job.findMany({
     where,
     orderBy: { createdAt: "desc" },
   });
+
   return (
     <div className="grow space-y-4">
       {jobs.map((job) => (
-        <JoblistItem job={job} key={job.id} />
+        <Link key={job.id} href={`/jobs/${job.slug}`} className="block">
+          <JoblistItem job={job} />
+        </Link>
       ))}
       {jobs.length === 0 && (
         <p className="m-auto text-center">No Jobs Found:(</p>
